@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  #main {
+    background-color: gray;
+    height: 575px;
+  }
+  
+  h1 {
+    width: 150px;
+    border: 3px solid black;
+    font-size: 30px;
+  }
+  
+  #red {
+    background-color: red;
+    height: 225px;
+  }
+  
+  #green {
+    background-color: green;
+    height: 150px;
+  }
+  
+  #blue {
+    background-color: cornflowerblue;
+    height: 75px;
+  }
+  
+  #main {
+    display: flex;
+  }
+  
+  /* Flex Grow, Flex Shrink, Flex Basis, Order, & Align-Self */
+  #red {
+    /* Flex Grow */
+    /* Flex Grow determines if a flexbox item will grow and how much it will grow. Also, 0 (Zero) is the default value. */
+    flex-grow: 0; 
+    flex-grow: 2; 
+  
+    /* Flex Shrink */
+    /* Flex Shrink determines if a flexbox item will shrink and how much it will shrink. Also, 1 is the default value */
+    flex-shrink: 1; 
+    /* Item will NOT shrink when flex-shrink is set to 0 (Zero) */      
+    flex-shrink: 0; 
+    flex-shrink: 2; 
+  
+    /* Flex Basis */
+    /* Flex Basis determines where the flex grow/shrink properties start from. Default is auto, which sets the length/width of the flexbox items to their predetermined length. Flex Basis is usually set using pixels. */
+    flex-basis: 400px; 
+    flex-grow: 1; 
+    flex-shrink: 0; 
+  
+    /* Flex Shorthand Property */
+    /* Syntax Example: flex: flex-grow flex-shrink flex-basis */
+    /* Default values are: "flex: 0 1 auto" */
+    flex: 1 0 400px; 
+  
+    /* Order */
+    /* Order changes the order of the flexbox items in their container */
+    order: 2; 
+  
+    /* Align Self */
+    /* Align self determines how the individual items display along the Cross axis */
+    align-self: center; 
+  }
+  
+  #green {
+    flex-grow: 2; 
+    flex-shrink: 1; 
+    order: 3; 
+    align-self: flex-end; 
+  }
+  
+  #blue {
+    flex-grow: 1; 
+    flex-shrink: 0;
+    order: 1;
+  }
